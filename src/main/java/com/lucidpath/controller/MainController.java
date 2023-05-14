@@ -18,8 +18,10 @@ public class MainController {
 
     @Get(produces = MediaType.APPLICATION_JSON)
     public HttpResponse<List<Engineer>> allEngineers() {
+        final int totalCount = 19;
+
         return HttpResponse.ok(
-                engineerGenerator.buildRandom(20)
+                engineerGenerator.buildRandom(totalCount)
         );
     }
 }
