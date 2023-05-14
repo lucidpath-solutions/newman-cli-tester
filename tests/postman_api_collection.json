@@ -20,7 +20,7 @@
 							"pm.test(\"Response contains 20 results\", function() {",
 							"    let jsonData = pm.response.json();",
 							"",
-							"    console.log(\"Testing\")",
+							"    pm.expect(jsonData.length, \"Testing\").to.equal(20);",
 							"})"
 						],
 						"type": "text/javascript"
