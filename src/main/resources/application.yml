@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: apiTester
+netty:
+  default:
+    allocator:
+      max-order: 3
